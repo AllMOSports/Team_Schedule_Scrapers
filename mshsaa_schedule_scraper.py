@@ -39,14 +39,14 @@ BASE_URL = "https://www.mshsaa.org/MySchool/Schedule.aspx"
 # in a browser and reading the `alg=` value out of the URL.
 ALG_CODES = {
     "football": 19,
-    "baseball": None,
-    "boys_basketball": None,
-    "girls_basketball": None,
-    "boys_soccer": None,
-    "girls_soccer": None,
-    "girls_volleyball": None,
-    "softball_fall": None,
-    "softball_spring": None,
+    "baseball": 3,
+    "boys_basketball": 5,
+    "girls_basketball": 6,
+    "boys_soccer": 33,
+    "girls_soccer": 34,
+    "girls_volleyball": 57,
+    "softball_fall": 38,
+    "softball_spring": 68,
 }
 
 REQUEST_DELAY_SECONDS = (1.5, 3.0)  # randomized delay range between requests
