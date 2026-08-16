@@ -1,0 +1,52 @@
+name: Build Scraper Schools JSON
+ 
+# Manual trigger only -- this is a data-prep step you'll re-run occasionally
+# whenever schools.json or mshsaa_schools.csv changes, not something that
+# needs to run on a schedule.
+on:
+  workflow_dispatch:
+    inputs:
+      allmosports_schools:
+        description: "Path to your existing schools.json"
+        required: true
+        default: "schools.json"
+      mshsaa_csv:
+        description: "Path to mshsaa_schools.csv"
+        required: true
+        default: "mshsaa_schools.csv"
+      output:
+        description: "Path to write scraper-ready schools JSON"
+        required: true
+        default: "scraper_schools.json"
+      unmatched_output:
+        description: "Path to write unmatched schools list"
+        required: true
+        default: "unmatched_schools.json"
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+ 
+      - name: Run merge script
+        run: |
+          python build_scraper_schools_json.py \
+            --allmosports-schools ${{ github.event.inputs.allmosports_schools }} \
+            --mshsaa-csv ${{ github.event.inputs.mshsaa_csv }} \
+            --output ${{ github.event.inputs.output }} \
+            --unmatched-output ${{ github.event.inputs.unmatched_output }}
+ 
+      - name: Commit output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ${{ github.event.inputs.output }} ${{ github.event.inputs.unmatched_output }}
+          git diff --cached --quiet || git commit -m "Rebuild scraper schools.json"
+          git push
