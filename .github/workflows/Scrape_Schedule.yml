@@ -1,0 +1,56 @@
+name: Scrape Team Schedules
+ 
+# Manual trigger only for now -- add a `schedule:` cron once you trust the
+# output and have thought through request volume against mshsaa.org's
+# robots.txt (see README.md).
+on:
+  workflow_dispatch:
+    inputs:
+      sport:
+        description: "Sport key (must match ALG_CODES in mshsaa_schedule_scraper.py)"
+        required: true
+        default: "football"
+      years:
+        description: "Space-separated years, e.g. '2020 2021 2022'"
+        required: true
+        default: "2020"
+      limit:
+        description: "Optional: limit to first N schools (leave blank for full run)"
+        required: false
+        default: ""
+ 
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+ 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+ 
+      - name: Run scraper
+        run: |
+          LIMIT_FLAG=""
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            LIMIT_FLAG="--limit ${{ github.event.inputs.limit }}"
+          fi
+          python run_scraper.py \
+            --sport ${{ github.event.inputs.sport }} \
+            --years ${{ github.event.inputs.years }} \
+            --schools schools.json \
+            --output output/${{ github.event.inputs.sport }}_schedules.json \
+            $LIMIT_FLAG
+ 
+      - name: Commit output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/
+          git diff --cached --quiet || git commit -m "Update ${{ github.event.inputs.sport }} schedules (${{ github.event.inputs.years }})"
+          git push
