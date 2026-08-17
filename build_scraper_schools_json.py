@@ -22,6 +22,7 @@ import csv
 import json
 import re
 import sys
+from difflib import SequenceMatcher
  
  
 SUFFIXES = [
@@ -45,6 +46,31 @@ def normalize(name: str) -> str:
     return n
  
  
+def fuzzy_match(name: str, lookup: dict, threshold: float = 0.82) -> tuple:
+    """Best-effort match for near-miss names (e.g. 'Academie Lafayette' vs CSV's
+    'academie lafayette charter'). Restricts comparison to CSV names sharing the
+    first word, for speed and to reduce false positives, then falls back to a
+    full scan if that bucket is empty. Returns (id, matched_csv_name, score) or
+    None if nothing clears the threshold.
+    """
+    norm = normalize(name)
+    first_word = norm.split()[0] if norm.split() else ""
+    bucket = [n for n in lookup if n.split() and n.split()[0] == first_word]
+    candidates = bucket or list(lookup.keys())
+ 
+    best_score = 0.0
+    best_name = None
+    for cand in candidates:
+        score = SequenceMatcher(None, norm, cand).ratio()
+        if score > best_score:
+            best_score = score
+            best_name = cand
+ 
+    if best_name is not None and best_score >= threshold:
+        return lookup[best_name], best_name, best_score
+    return None
+ 
+ 
 def load_mshsaa_csv(path: str) -> dict:
     """Return {normalized_name: id}. Warns on duplicate normalized names."""
     lookup = {}
@@ -65,9 +91,17 @@ def load_mshsaa_csv(path: str) -> dict:
  
  
 def load_allmosports_schools(path: str) -> dict:
-    """Return {slug: {mshsaa_name, name}}."""
+    """Return {slug: {mshsaa_name, name, sports}}.
+ 
+    Handles two shapes:
+      1. The dict of schools directly: {slug: {...}, slug: {...}}
+      2. Wrapped under a "schools" key alongside other metadata:
+         {"generated": ..., "ranges": {...}, "schools": {slug: {...}, ...}}
+    """
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
+    if isinstance(data, dict) and "schools" in data and isinstance(data["schools"], dict):
+        return data["schools"]
     return data
  
  
@@ -76,7 +110,7 @@ def main():
     parser.add_argument("--allmosports-schools", required=True, help="Path to your existing schools.json")
     parser.add_argument("--mshsaa-csv", required=True, help="Path to mshsaa_schools.csv")
     parser.add_argument("--output", required=True, help="Path to write scraper-ready schools JSON")
-    parser.add_argument("--unmatched-output", default=None, help="Optional path to write list of unmatched schools")
+    parser.add_argument("--unmatched-output", default=None, help="Optional path to write list of unmatched schools, with suggested (unverified) candidates")
     args = parser.parse_args()
  
     mshsaa_lookup = load_mshsaa_csv(args.mshsaa_csv)
@@ -121,11 +155,26 @@ def main():
                 "slug": slug,
             })
         else:
-            unmatched.append({
+            # No exact match. Suggest the closest CSV name(s) for manual review --
+            # NEVER auto-accept a fuzzy match. Missouri has many schools with
+            # generic, similar-sounding names (e.g. "Summit Christian Academy" vs
+            # "Faith Christian Academy", "Sheldon" vs "Eldon") where a plausible-
+            # looking text-similarity score is still the wrong school. Attaching
+            # the wrong MSHSAA id would silently scrape and label the wrong
+            # team's schedule, so this always requires a human decision.
+            best_cand = candidates[0] if candidates else (info.get("name") or slug)
+            suggestion = fuzzy_match(best_cand, mshsaa_lookup, threshold=0.0)
+            entry = {
                 "slug": slug,
                 "mshsaa_name": info.get("mshsaa_name"),
                 "name": info.get("name"),
-            })
+            }
+            if suggestion:
+                sug_id, sug_name, sug_score = suggestion
+                entry["suggested_id"] = sug_id
+                entry["suggested_csv_name"] = sug_name
+                entry["suggested_score"] = round(sug_score, 3)
+            unmatched.append(entry)
  
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(matched, f, indent=2, ensure_ascii=False)
@@ -135,22 +184,22 @@ def main():
         print(f"Skipped {len(skipped_metadata)} non-school top-level keys: {skipped_metadata}")
  
     # Always write the unmatched file, even if empty, so downstream steps
-    # (e.g. a CI `git add`) can rely on it existing.
+    # (e.g. a CI `git add`) can rely on it existing. Each entry may include a
+    # suggested_id / suggested_csv_name / suggested_score for manual review --
+    # these are NEVER auto-applied. Verify each one before adding it to your
+    # schools list; some suggestions will be wrong (e.g. "Sheldon" vs "Eldon").
     if args.unmatched_output:
         with open(args.unmatched_output, "w", encoding="utf-8") as f:
             json.dump(unmatched, f, indent=2, ensure_ascii=False)
  
     if unmatched:
-        print(f"{len(unmatched)} schools unmatched.", file=sys.stderr)
-        if args.unmatched_output:
-            print(f"Wrote unmatched list -> {args.unmatched_output}", file=sys.stderr)
-        else:
-            for u in unmatched[:20]:
-                print(f"  {u['slug']}: '{u['mshsaa_name']}' / '{u['name']}'", file=sys.stderr)
+        print(f"{len(unmatched)} schools unmatched -- see {args.unmatched_output} for review, "
+              f"each with a suggested_id where a plausible candidate was found.", file=sys.stderr)
+        print("Suggestions are NOT verified -- confirm each one before using it "
+              "(similar-sounding schools can produce a confident-looking wrong match).", file=sys.stderr)
     else:
         print("All schools matched.")
  
  
 if __name__ == "__main__":
     main()
- 
