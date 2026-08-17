@@ -1,0 +1,57 @@
+name: Resolve School IDs From Opponents
+ 
+# Manual trigger only -- run this after you've scraped one or more sports'
+# schedules and want to try resolving remaining unmatched schools using
+# opponent data pulled live from mshsaa.org.
+on:
+  workflow_dispatch:
+    inputs:
+      schedule_outputs:
+        description: "Space-separated list of schedule output JSON files (e.g. output/football_schedules.json output/boys_soccer_schedules.json)"
+        required: true
+        default: "output/football_schedules.json"
+      unmatched:
+        description: "Path to unmatched_schools.json"
+        required: true
+        default: "unmatched_schools.json"
+      output:
+        description: "Path to write resolved additions"
+        required: true
+        default: "resolved_from_opponents.json"
+      still_unresolved_output:
+        description: "Path to write schools still without an id"
+        required: true
+        default: "still_unresolved_after_opponents.json"
+      conflicts_output:
+        description: "Path to write opponent-name collisions"
+        required: true
+        default: "opponent_name_collisions.json"
+ 
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+ 
+      - name: Run resolver
+        run: |
+          python resolve_from_opponents.py \
+            --schedule-outputs ${{ github.event.inputs.schedule_outputs }} \
+            --unmatched ${{ github.event.inputs.unmatched }} \
+            --output ${{ github.event.inputs.output }} \
+            --still-unresolved-output ${{ github.event.inputs.still_unresolved_output }} \
+            --conflicts-output ${{ github.event.inputs.conflicts_output }}
+ 
+      - name: Commit output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ${{ github.event.inputs.output }} ${{ github.event.inputs.still_unresolved_output }} ${{ github.event.inputs.conflicts_output }}
+          git diff --cached --quiet || git commit -m "Resolve school ids from opponent data"
+          git push
