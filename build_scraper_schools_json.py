@@ -134,16 +134,23 @@ def main():
     if skipped_metadata:
         print(f"Skipped {len(skipped_metadata)} non-school top-level keys: {skipped_metadata}")
  
+    # Always write the unmatched file, even if empty, so downstream steps
+    # (e.g. a CI `git add`) can rely on it existing.
+    if args.unmatched_output:
+        with open(args.unmatched_output, "w", encoding="utf-8") as f:
+            json.dump(unmatched, f, indent=2, ensure_ascii=False)
+ 
     if unmatched:
         print(f"{len(unmatched)} schools unmatched.", file=sys.stderr)
         if args.unmatched_output:
-            with open(args.unmatched_output, "w", encoding="utf-8") as f:
-                json.dump(unmatched, f, indent=2, ensure_ascii=False)
             print(f"Wrote unmatched list -> {args.unmatched_output}", file=sys.stderr)
         else:
             for u in unmatched[:20]:
                 print(f"  {u['slug']}: '{u['mshsaa_name']}' / '{u['name']}'", file=sys.stderr)
+    else:
+        print("All schools matched.")
  
  
 if __name__ == "__main__":
     main()
+ 
