@@ -16,14 +16,6 @@
     "suggested_score": 0.667
   },
   {
-    "slug": "chaminade-college-prep",
-    "mshsaa_name": "Chaminade College Prep",
-    "name": "Chaminade College Prep",
-    "suggested_id": 512,
-    "suggested_csv_name": "chaminade college preparatory",
-    "suggested_score": 0.863
-  },
-  {
     "slug": "christian-fellowship-sr",
     "mshsaa_name": "Christian Fellowship Sr.",
     "name": "Christian Fellowship Sr.",
@@ -72,22 +64,6 @@
     "suggested_score": 0.84
   },
   {
-    "slug": "father-tolton",
-    "mshsaa_name": "Father Tolton with Calvary Lutheran",
-    "name": "Father Tolton",
-    "suggested_id": 917,
-    "suggested_csv_name": "father tolton regional catholic",
-    "suggested_score": 0.606
-  },
-  {
-    "slug": "forsyth",
-    "mshsaa_name": "Forsyth",
-    "name": "Forsyth",
-    "suggested_id": 222,
-    "suggested_csv_name": "bosworth",
-    "suggested_score": 0.533
-  },
-  {
     "slug": "frontier-stem",
     "mshsaa_name": "Frontier STEM",
     "name": "Frontier STEM",
@@ -112,28 +88,12 @@
     "suggested_score": 0.706
   },
   {
-    "slug": "kipp-kc-legacy",
-    "mshsaa_name": "KIPP KC Legacy",
-    "name": "KIPP KC Legacy",
-    "suggested_id": 1608,
-    "suggested_csv_name": "kipp kc legacy charter",
-    "suggested_score": 0.778
-  },
-  {
     "slug": "kipp-st-louis-sr",
     "mshsaa_name": "KIPP St. Louis Sr.",
     "name": "KIPP St. Louis Sr.",
     "suggested_id": 1189,
     "suggested_csv_name": "kipp st louis charter",
     "suggested_score": 0.811
-  },
-  {
-    "slug": "new-heights-christian",
-    "mshsaa_name": "New Heights Christian",
-    "name": "New Heights Christian",
-    "suggested_id": 574,
-    "suggested_csv_name": "new heights christian academy",
-    "suggested_score": 0.84
   },
   {
     "slug": "rosati-kain",
@@ -144,36 +104,12 @@
     "suggested_score": 0.588
   },
   {
-    "slug": "russellville",
-    "mshsaa_name": "Russellville",
-    "name": "Russellville",
-    "suggested_id": 40,
-    "suggested_csv_name": "cassville",
-    "suggested_score": 0.667
-  },
-  {
     "slug": "sacred-heart",
     "mshsaa_name": "Sacred Heart",
     "name": "Sacred Heart",
     "suggested_id": 78,
     "suggested_csv_name": "hazelwood east",
     "suggested_score": 0.538
-  },
-  {
-    "slug": "salisbury",
-    "mshsaa_name": "Salisbury",
-    "name": "Salisbury",
-    "suggested_id": 313,
-    "suggested_csv_name": "harrisburg",
-    "suggested_score": 0.632
-  },
-  {
-    "slug": "santa-fe",
-    "mshsaa_name": "Santa Fe",
-    "name": "Santa Fe",
-    "suggested_id": 417,
-    "suggested_csv_name": "pleasant hope",
-    "suggested_score": 0.571
   },
   {
     "slug": "saxony-lutheran",
@@ -192,30 +128,6 @@
     "suggested_score": 0.583
   },
   {
-    "slug": "scotland-county",
-    "mshsaa_name": "Scotland County",
-    "name": "Scotland County",
-    "suggested_id": 261,
-    "suggested_csv_name": "clark county",
-    "suggested_score": 0.741
-  },
-  {
-    "slug": "scott-city",
-    "mshsaa_name": "Scott City with Chaffee",
-    "name": "Scott City",
-    "suggested_id": 432,
-    "suggested_csv_name": "scott county central",
-    "suggested_score": 0.558
-  },
-  {
-    "slug": "seckman",
-    "mshsaa_name": "Seckman",
-    "name": "Seckman",
-    "suggested_id": 85,
-    "suggested_csv_name": "hickman",
-    "suggested_score": 0.714
-  },
-  {
     "slug": "seymour",
     "mshsaa_name": "Seymour",
     "name": "Seymour",
@@ -232,44 +144,12 @@
     "suggested_score": 0.833
   },
   {
-    "slug": "sherwood",
-    "mshsaa_name": "Sherwood",
-    "name": "Sherwood",
-    "suggested_id": 436,
-    "suggested_csv_name": "sherwood cass",
-    "suggested_score": 0.762
-  },
-  {
     "slug": "silex",
     "mshsaa_name": "Silex",
     "name": "Silex",
     "suggested_id": 193,
     "suggested_csv_name": "salem",
     "suggested_score": 0.6
-  },
-  {
-    "slug": "skyline",
-    "mshsaa_name": "Skyline",
-    "name": "Skyline",
-    "suggested_id": 192,
-    "suggested_csv_name": "ruskin",
-    "suggested_score": 0.615
-  },
-  {
-    "slug": "sluh",
-    "mshsaa_name": "SLUH",
-    "name": "SLUH",
-    "suggested_id": 283,
-    "suggested_csv_name": "couch",
-    "suggested_score": 0.444
-  },
-  {
-    "slug": "smith-cotton",
-    "mshsaa_name": "Smith-Cotton",
-    "name": "Smith-Cotton",
-    "suggested_id": 433,
-    "suggested_csv_name": "sedalia smith cotton",
-    "suggested_score": 0.75
   },
   {
     "slug": "smithton",
@@ -288,22 +168,6 @@
     "suggested_score": 0.456
   },
   {
-    "slug": "south-harrison",
-    "mshsaa_name": "South Harrison",
-    "name": "South Harrison",
-    "suggested_id": 440,
-    "suggested_csv_name": "south pemiscot",
-    "suggested_score": 0.643
-  },
-  {
-    "slug": "south-holt",
-    "mshsaa_name": "South Holt",
-    "name": "South Holt",
-    "suggested_id": 443,
-    "suggested_csv_name": "south shelby",
-    "suggested_score": 0.727
-  },
-  {
     "slug": "south-iron",
     "mshsaa_name": "South Iron",
     "name": "South Iron",
@@ -318,14 +182,6 @@
     "suggested_id": 440,
     "suggested_csv_name": "south pemiscot",
     "suggested_score": 0.696
-  },
-  {
-    "slug": "southern-boone",
-    "mshsaa_name": "Southern Boone",
-    "name": "Southern Boone",
-    "suggested_id": 223,
-    "suggested_csv_name": "bourbon",
-    "suggested_score": 0.571
   },
   {
     "slug": "southland",
@@ -360,76 +216,12 @@
     "suggested_score": 0.571
   },
   {
-    "slug": "st-charles-west",
-    "mshsaa_name": "St. Charles West",
-    "name": "St. Charles West",
-    "suggested_id": 198,
-    "suggested_csv_name": "st charles",
-    "suggested_score": 0.8
-  },
-  {
-    "slug": "st-dominic",
-    "mshsaa_name": "St. Dominic",
-    "name": "St. Dominic",
-    "suggested_id": 545,
-    "suggested_csv_name": "st louis university",
-    "suggested_score": 0.483
-  },
-  {
-    "slug": "st-marys-south-side",
-    "mshsaa_name": "St. Mary's South Side",
-    "name": "St. Mary's South Side",
-    "suggested_id": 546,
-    "suggested_csv_name": "st marys st louis",
-    "suggested_score": 0.722
-  },
-  {
-    "slug": "st-paul-lutheran-concordia",
-    "mshsaa_name": "St. Paul Lutheran (Concordia)",
-    "name": "St. Paul Lutheran (Concordia)",
-    "suggested_id": 543,
-    "suggested_csv_name": "st francis borgia",
-    "suggested_score": 0.512
-  },
-  {
     "slug": "st-paul-lutheran-farmington",
     "mshsaa_name": "St. Paul Lutheran (Farmington)",
     "name": "St. Paul Lutheran (Farmington)",
     "suggested_id": 972,
     "suggested_csv_name": "st michael the archangel",
     "suggested_score": 0.51
-  },
-  {
-    "slug": "st-pius-x-kansas-city",
-    "mshsaa_name": "St. Pius X (Kansas City)",
-    "name": "St. Pius X (Kansas City)",
-    "suggested_id": 552,
-    "suggested_csv_name": "st pius x festus",
-    "suggested_score": 0.649
-  },
-  {
-    "slug": "st-vincent",
-    "mshsaa_name": "St. Vincent",
-    "name": "St. Vincent",
-    "suggested_id": 446,
-    "suggested_csv_name": "st elizabeth",
-    "suggested_score": 0.545
-  },
-  {
-    "slug": "staley",
-    "mshsaa_name": "Staley",
-    "name": "Staley",
-    "suggested_id": 193,
-    "suggested_csv_name": "salem",
-    "suggested_score": 0.727
-  },
-  {
-    "slug": "ste-genevieve",
-    "mshsaa_name": "Ste. Genevieve",
-    "name": "Ste. Genevieve",
-    "suggested_id": 285,
-    "suggested_csv_name": "eugene",
-    "suggested_score": 0.526
   },
   {
     "slug": "steam-academy",
@@ -456,14 +248,6 @@
     "suggested_score": 0.75
   },
   {
-    "slug": "stockton",
-    "mshsaa_name": "Stockton with Sheldon",
-    "name": "Stockton",
-    "suggested_id": 443,
-    "suggested_csv_name": "south shelby",
-    "suggested_score": 0.545
-  },
-  {
     "slug": "stoutland",
     "mshsaa_name": "Stoutland",
     "name": "Stoutland",
@@ -472,28 +256,12 @@
     "suggested_score": 0.588
   },
   {
-    "slug": "strafford",
-    "mshsaa_name": "Strafford",
-    "name": "Strafford",
-    "suggested_id": 4,
-    "suggested_csv_name": "affton",
-    "suggested_score": 0.533
-  },
-  {
     "slug": "sturgeon",
     "mshsaa_name": "Sturgeon",
     "name": "Sturgeon",
     "suggested_id": 196,
     "suggested_csv_name": "trenton",
     "suggested_score": 0.667
-  },
-  {
-    "slug": "summit-christian-academy",
-    "mshsaa_name": "Summit Christian Academy",
-    "name": "Summit Christian Academy",
-    "suggested_id": 1660,
-    "suggested_csv_name": "faith christian academy",
-    "suggested_score": 0.851
   },
   {
     "slug": "sumner",
@@ -510,14 +278,6 @@
     "suggested_id": 548,
     "suggested_csv_name": "thomas jefferson independent day school",
     "suggested_score": 0.901
-  },
-  {
-    "slug": "timberland",
-    "mshsaa_name": "Timberland",
-    "name": "Timberland",
-    "suggested_id": 325,
-    "suggested_csv_name": "iberia",
-    "suggested_score": 0.625
   },
   {
     "slug": "tina-avalon",
@@ -544,14 +304,6 @@
     "suggested_score": 0.783
   },
   {
-    "slug": "truman",
-    "mshsaa_name": "Truman",
-    "name": "Truman",
-    "suggested_id": 83,
-    "suggested_csv_name": "hermann",
-    "suggested_score": 0.615
-  },
-  {
     "slug": "twin-rivers",
     "mshsaa_name": "Twin Rivers",
     "name": "Twin Rivers",
@@ -568,28 +320,12 @@
     "suggested_score": 0.667
   },
   {
-    "slug": "university-academy-charter",
-    "mshsaa_name": "University Academy Charter with Ewing Marion Kauffman",
-    "name": "University Academy Charter",
-    "suggested_id": 203,
-    "suggested_csv_name": "university city",
-    "suggested_score": 0.412
-  },
-  {
     "slug": "ursuline-academy",
     "mshsaa_name": "Ursuline Academy",
     "name": "Ursuline Academy",
     "suggested_id": 164,
     "suggested_csv_name": "paseo academy",
     "suggested_score": 0.69
-  },
-  {
-    "slug": "valle-catholic",
-    "mshsaa_name": "Valle Catholic",
-    "name": "Valle Catholic",
-    "suggested_id": 568,
-    "suggested_csv_name": "mcauley catholic",
-    "suggested_score": 0.8
   },
   {
     "slug": "valley",
@@ -616,14 +352,6 @@
     "suggested_score": 0.625
   },
   {
-    "slug": "van-horn",
-    "mshsaa_name": "Van Horn",
-    "name": "Van Horn",
-    "suggested_id": 458,
-    "suggested_csv_name": "van far",
-    "suggested_score": 0.667
-  },
-  {
     "slug": "vashon",
     "mshsaa_name": "Vashon",
     "name": "Vashon",
@@ -632,28 +360,12 @@
     "suggested_score": 0.667
   },
   {
-    "slug": "veritas-christian-academy",
-    "mshsaa_name": "Veritas Christian Academy",
-    "name": "Veritas Christian Academy",
-    "suggested_id": 1736,
-    "suggested_csv_name": "libertas christian academy",
-    "suggested_score": 0.902
-  },
-  {
     "slug": "verona",
     "mshsaa_name": "Verona",
     "name": "Verona",
     "suggested_id": 286,
     "suggested_csv_name": "everton",
     "suggested_score": 0.769
-  },
-  {
-    "slug": "vianney",
-    "mshsaa_name": "Vianney",
-    "name": "Vianney",
-    "suggested_id": 410,
-    "suggested_csv_name": "penney",
-    "suggested_score": 0.615
   },
   {
     "slug": "viburnum",
@@ -680,44 +392,12 @@
     "suggested_score": 0.645
   },
   {
-    "slug": "warrensburg",
-    "mshsaa_name": "Warrensburg",
-    "name": "Warrensburg",
-    "suggested_id": 313,
-    "suggested_csv_name": "harrisburg",
-    "suggested_score": 0.762
-  },
-  {
-    "slug": "warrenton",
-    "mshsaa_name": "Warrenton",
-    "name": "Warrenton",
-    "suggested_id": 196,
-    "suggested_csv_name": "trenton",
-    "suggested_score": 0.75
-  },
-  {
-    "slug": "washington",
-    "mshsaa_name": "Washington",
-    "name": "Washington",
-    "suggested_id": 59,
-    "suggested_csv_name": "farmington",
-    "suggested_score": 0.7
-  },
-  {
     "slug": "weaubleau",
     "mshsaa_name": "Weaubleau",
     "name": "Weaubleau",
     "suggested_id": 298,
     "suggested_csv_name": "galena",
     "suggested_score": 0.533
-  },
-  {
-    "slug": "wellington-napoleon",
-    "mshsaa_name": "Wellington-Napoleon",
-    "name": "Wellington-Napoleon",
-    "suggested_id": 452,
-    "suggested_csv_name": "ellington",
-    "suggested_score": 0.643
   },
   {
     "slug": "west-county",
@@ -734,22 +414,6 @@
     "suggested_id": 208,
     "suggested_csv_name": "west plains",
     "suggested_score": 0.522
-  },
-  {
-    "slug": "west-platte",
-    "mshsaa_name": "West Platte",
-    "name": "West Platte",
-    "suggested_id": 208,
-    "suggested_csv_name": "west plains",
-    "suggested_score": 0.727
-  },
-  {
-    "slug": "westminster-christian-academy",
-    "mshsaa_name": "Westminster Christian Academy",
-    "name": "Westminster Christian Academy",
-    "suggested_id": 1736,
-    "suggested_csv_name": "libertas christian academy",
-    "suggested_score": 0.764
   },
   {
     "slug": "wheatland",
@@ -774,54 +438,6 @@
     "suggested_id": 107,
     "suggested_csv_name": "marshfield",
     "suggested_score": 0.632
-  },
-  {
-    "slug": "william-chrisman",
-    "mshsaa_name": "William Chrisman",
-    "name": "William Chrisman",
-    "suggested_id": 1022,
-    "suggested_csv_name": "northland christian",
-    "suggested_score": 0.571
-  },
-  {
-    "slug": "willow-springs",
-    "mshsaa_name": "Willow Springs",
-    "name": "Willow Springs",
-    "suggested_id": 14,
-    "suggested_csv_name": "blue springs",
-    "suggested_score": 0.692
-  },
-  {
-    "slug": "windsor",
-    "mshsaa_name": "Windsor",
-    "name": "Windsor",
-    "suggested_id": 466,
-    "suggested_csv_name": "winona",
-    "suggested_score": 0.615
-  },
-  {
-    "slug": "windsor-imperial",
-    "mshsaa_name": "Windsor (Imperial)",
-    "name": "Windsor (Imperial)",
-    "suggested_id": 538,
-    "suggested_csv_name": "principia",
-    "suggested_score": 0.48
-  },
-  {
-    "slug": "winfield",
-    "mshsaa_name": "Winfield",
-    "name": "Winfield",
-    "suggested_id": 353,
-    "suggested_csv_name": "mansfield",
-    "suggested_score": 0.706
-  },
-  {
-    "slug": "winnetonka",
-    "mshsaa_name": "Winnetonka",
-    "name": "Winnetonka",
-    "suggested_id": 466,
-    "suggested_csv_name": "winona",
-    "suggested_score": 0.75
   },
   {
     "slug": "winston",

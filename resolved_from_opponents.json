@@ -1,1 +1,242 @@
-[]
+[
+  {
+    "id": 512,
+    "name": "Chaminade College Prep",
+    "slug": "chaminade-college-prep"
+  },
+  {
+    "id": 917,
+    "name": "Father Tolton",
+    "slug": "father-tolton"
+  },
+  {
+    "id": 62,
+    "name": "Forsyth",
+    "slug": "forsyth"
+  },
+  {
+    "id": 1608,
+    "name": "KIPP KC Legacy",
+    "slug": "kipp-kc-legacy"
+  },
+  {
+    "id": 574,
+    "name": "New Heights Christian",
+    "slug": "new-heights-christian"
+  },
+  {
+    "id": 430,
+    "name": "Russellville",
+    "slug": "russellville"
+  },
+  {
+    "id": 431,
+    "name": "Salisbury",
+    "slug": "salisbury"
+  },
+  {
+    "id": 432,
+    "name": "Santa Fe",
+    "slug": "santa-fe"
+  },
+  {
+    "id": 434,
+    "name": "Scotland County",
+    "slug": "scotland-county"
+  },
+  {
+    "id": 435,
+    "name": "Scott City",
+    "slug": "scott-city"
+  },
+  {
+    "id": 184,
+    "name": "Seckman",
+    "slug": "seckman"
+  },
+  {
+    "id": 439,
+    "name": "Sherwood",
+    "slug": "sherwood"
+  },
+  {
+    "id": 443,
+    "name": "Skyline",
+    "slug": "skyline"
+  },
+  {
+    "id": 547,
+    "name": "SLUH",
+    "slug": "sluh"
+  },
+  {
+    "id": 194,
+    "name": "Smith-Cotton",
+    "slug": "smith-cotton"
+  },
+  {
+    "id": 446,
+    "name": "South Harrison",
+    "slug": "south-harrison"
+  },
+  {
+    "id": 447,
+    "name": "South Holt",
+    "slug": "south-holt"
+  },
+  {
+    "id": 2,
+    "name": "Southern Boone",
+    "slug": "southern-boone"
+  },
+  {
+    "id": 169,
+    "name": "St. Charles West",
+    "slug": "st-charles-west"
+  },
+  {
+    "id": 542,
+    "name": "St. Dominic",
+    "slug": "st-dominic"
+  },
+  {
+    "id": 549,
+    "name": "St. Mary's South Side",
+    "slug": "st-marys-south-side"
+  },
+  {
+    "id": 550,
+    "name": "St. Paul Lutheran (Concordia)",
+    "slug": "st-paul-lutheran-concordia"
+  },
+  {
+    "id": 551,
+    "name": "St. Pius X (Kansas City)",
+    "slug": "st-pius-x-kansas-city"
+  },
+  {
+    "id": 554,
+    "name": "St. Vincent",
+    "slug": "st-vincent"
+  },
+  {
+    "id": 805,
+    "name": "Staley",
+    "slug": "staley"
+  },
+  {
+    "id": 459,
+    "name": "Ste. Genevieve",
+    "slug": "ste-genevieve"
+  },
+  {
+    "id": 463,
+    "name": "Stockton",
+    "slug": "stockton"
+  },
+  {
+    "id": 466,
+    "name": "Strafford",
+    "slug": "strafford"
+  },
+  {
+    "id": 783,
+    "name": "Summit Christian Academy",
+    "slug": "summit-christian-academy"
+  },
+  {
+    "id": 472,
+    "name": "Timberland",
+    "slug": "timberland"
+  },
+  {
+    "id": 198,
+    "name": "Truman",
+    "slug": "truman"
+  },
+  {
+    "id": 479,
+    "name": "University Academy Charter",
+    "slug": "university-academy-charter"
+  },
+  {
+    "id": 559,
+    "name": "Valle Catholic",
+    "slug": "valle-catholic"
+  },
+  {
+    "id": 204,
+    "name": "Van Horn",
+    "slug": "van-horn"
+  },
+  {
+    "id": 812,
+    "name": "Veritas Christian Academy",
+    "slug": "veritas-christian-academy"
+  },
+  {
+    "id": 560,
+    "name": "Vianney",
+    "slug": "vianney"
+  },
+  {
+    "id": 218,
+    "name": "Warrensburg",
+    "slug": "warrensburg"
+  },
+  {
+    "id": 489,
+    "name": "Warrenton",
+    "slug": "warrenton"
+  },
+  {
+    "id": 491,
+    "name": "Washington",
+    "slug": "washington"
+  },
+  {
+    "id": 492,
+    "name": "Wellington-Napoleon",
+    "slug": "wellington-napoleon"
+  },
+  {
+    "id": 495,
+    "name": "West Platte",
+    "slug": "west-platte"
+  },
+  {
+    "id": 564,
+    "name": "Westminster Christian Academy",
+    "slug": "westminster-christian-academy"
+  },
+  {
+    "id": 235,
+    "name": "William Chrisman",
+    "slug": "william-chrisman"
+  },
+  {
+    "id": 498,
+    "name": "Willow Springs",
+    "slug": "willow-springs"
+  },
+  {
+    "id": 500,
+    "name": "Windsor",
+    "slug": "windsor"
+  },
+  {
+    "id": 499,
+    "name": "Windsor (Imperial)",
+    "slug": "windsor-imperial"
+  },
+  {
+    "id": 501,
+    "name": "Winfield",
+    "slug": "winfield"
+  },
+  {
+    "id": 209,
+    "name": "Winnetonka",
+    "slug": "winnetonka"
+  }
+]
