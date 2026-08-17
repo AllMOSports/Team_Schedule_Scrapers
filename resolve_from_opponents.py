@@ -140,10 +140,14 @@ def main():
     print(f"Resolved {len(resolved)} / {len(unmatched)} schools from opponent data -> {args.output}")
     print(f"{len(still_unresolved)} still unresolved -> {args.still_unresolved_output}")
  
-    if args.conflicts_output and conflicts:
+    if args.conflicts_output:
         with open(args.conflicts_output, "w", encoding="utf-8") as f:
             json.dump(conflicts, f, indent=2, ensure_ascii=False)
-        print(f"{len(conflicts)} opponent-name collisions written -> {args.conflicts_output} (not auto-used; a name mapped to more than one id in your scraped data)")
+        if conflicts:
+            print(f"{len(conflicts)} opponent-name collisions written -> {args.conflicts_output} "
+                  f"(not auto-used; a name mapped to more than one id in your scraped data)")
+        else:
+            print(f"No opponent-name collisions found -> {args.conflicts_output} (empty)")
  
  
 if __name__ == "__main__":
