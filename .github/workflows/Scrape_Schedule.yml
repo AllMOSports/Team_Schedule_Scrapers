@@ -14,6 +14,10 @@ on:
         description: "Space-separated years, e.g. '2020 2021 2022'"
         required: true
         default: "2020"
+      schools_file:
+        description: "Path to the schools JSON file (must have id/name/slug fields with real MSHSAA ids)"
+        required: true
+        default: "scraper_schools.json"
       limit:
         description: "Optional: limit to first N schools (leave blank for full run)"
         required: false
@@ -43,7 +47,7 @@ jobs:
           python run_scraper.py \
             --sport ${{ github.event.inputs.sport }} \
             --years ${{ github.event.inputs.years }} \
-            --schools schools.json \
+            --schools ${{ github.event.inputs.schools_file }} \
             --output output/${{ github.event.inputs.sport }}_schedules.json \
             $LIMIT_FLAG
  
