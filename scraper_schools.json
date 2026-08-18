@@ -1,5 +1,10 @@
 [
   {
+    "id": 1567,
+    "name": "Academie Lafayette",
+    "slug": "academie-lafayette"
+  },
+  {
     "id": 3,
     "name": "Adrian",
     "slug": "adrian"
@@ -83,6 +88,11 @@
     "id": 10,
     "name": "Bayless",
     "slug": "bayless"
+  },
+  {
+    "id": 1817,
+    "name": "Believe Acad Charter",
+    "slug": "believe-acad-charter"
   },
   {
     "id": 211,
@@ -405,6 +415,11 @@
     "slug": "christian-brothers-college"
   },
   {
+    "id": 1099,
+    "name": "Christian Fellowship Sr.",
+    "slug": "christian-fellowship-sr"
+  },
+  {
     "id": 261,
     "name": "Clark County",
     "slug": "clark-county"
@@ -448,6 +463,11 @@
     "id": 272,
     "name": "Cole Camp",
     "slug": "cole-camp"
+  },
+  {
+    "id": 985,
+    "name": "Collegiate School of Med-Bio Science",
+    "slug": "collegiate-school-of-med-bio-science"
   },
   {
     "id": 566,
@@ -515,6 +535,11 @@
     "slug": "crossroads-college-preparatory"
   },
   {
+    "id": 1135,
+    "name": "Crossroads Prep Charter",
+    "slug": "crossroads-prep-charter"
+  },
+  {
     "id": 68,
     "name": "Crystal City",
     "slug": "crystal-city"
@@ -538,6 +563,16 @@
     "id": 265,
     "name": "DeKalb",
     "slug": "dekalb"
+  },
+  {
+    "id": 918,
+    "name": "DeLaSalle Charter",
+    "slug": "delasalle-charter"
+  },
+  {
+    "id": 918,
+    "name": "DeLaSalle Charter (KC)",
+    "slug": "delasalle-charter-kc"
   },
   {
     "id": 35,
@@ -655,6 +690,11 @@
     "slug": "everton"
   },
   {
+    "id": 1206,
+    "name": "Ewing Marion Kauffman",
+    "slug": "ewing-marion-kauffman"
+  },
+  {
     "id": 296,
     "name": "Excelsior Springs",
     "slug": "excelsior-springs"
@@ -745,6 +785,11 @@
     "slug": "fredericktown"
   },
   {
+    "id": 961,
+    "name": "Frontier STEM",
+    "slug": "frontier-stem"
+  },
+  {
     "id": 916,
     "name": "Frontier School of Excellence Charter",
     "slug": "frontier-school-of-excellence-charter"
@@ -793,6 +838,11 @@
     "id": 25,
     "name": "Gateway",
     "slug": "gateway"
+  },
+  {
+    "id": 1030,
+    "name": "Gateway Science Charter",
+    "slug": "gateway-science-charter"
   },
   {
     "id": 300,
@@ -1055,6 +1105,11 @@
     "slug": "jasper"
   },
   {
+    "id": 328,
+    "name": "Jefferson (Conception)",
+    "slug": "jefferson-conception"
+  },
+  {
     "id": 825,
     "name": "Jefferson (Festus)",
     "slug": "jefferson-festus"
@@ -1083,6 +1138,11 @@
     "id": 1608,
     "name": "KIPP KC Legacy",
     "slug": "kipp-kc-legacy"
+  },
+  {
+    "id": 1189,
+    "name": "KIPP St. Louis Sr.",
+    "slug": "kipp-st-louis-sr"
   },
   {
     "id": 329,
@@ -2105,6 +2165,11 @@
     "slug": "roosevelt"
   },
   {
+    "id": 541,
+    "name": "Rosati-Kain",
+    "slug": "rosati-kain"
+  },
+  {
     "id": 192,
     "name": "Ruskin",
     "slug": "ruskin"
@@ -2120,7 +2185,17 @@
     "slug": "sluh"
   },
   {
-    "id": 193,
+    "id": 1532,
+    "name": "STEAM Academy",
+    "slug": "steam-academy"
+  },
+  {
+    "id": 573,
+    "name": "Sacred Heart",
+    "slug": "sacred-heart"
+  },
+  {
+    "id": 174,
     "name": "Salem",
     "slug": "salem"
   },
@@ -2143,6 +2218,16 @@
     "id": 177,
     "name": "Savannah",
     "slug": "savannah"
+  },
+  {
+    "id": 555,
+    "name": "Saxony Lutheran",
+    "slug": "saxony-lutheran"
+  },
+  {
+    "id": 919,
+    "name": "School of the Ozarks",
+    "slug": "school-of-the-ozarks"
   },
   {
     "id": 183,
@@ -2180,6 +2265,16 @@
     "slug": "seneca"
   },
   {
+    "id": 437,
+    "name": "Seymour",
+    "slug": "seymour"
+  },
+  {
+    "id": 438,
+    "name": "Sheldon",
+    "slug": "sheldon"
+  },
+  {
     "id": 439,
     "name": "Sherwood",
     "slug": "sherwood"
@@ -2190,12 +2285,17 @@
     "slug": "sikeston"
   },
   {
+    "id": 440,
+    "name": "Silex",
+    "slug": "silex"
+  },
+  {
     "id": 443,
     "name": "Skyline",
     "slug": "skyline"
   },
   {
-    "id": 197,
+    "id": 193,
     "name": "Slater",
     "slug": "slater"
   },
@@ -2205,12 +2305,22 @@
     "slug": "smith-cotton"
   },
   {
-    "id": 437,
+    "id": 444,
+    "name": "Smithton",
+    "slug": "smithton"
+  },
+  {
+    "id": 445,
     "name": "Smithville",
     "slug": "smithville"
   },
   {
-    "id": 438,
+    "id": 195,
+    "name": "Soldan International Studies",
+    "slug": "soldan-international-studies"
+  },
+  {
+    "id": 197,
     "name": "South Callaway",
     "slug": "south-callaway"
   },
@@ -2225,12 +2335,17 @@
     "slug": "south-holt"
   },
   {
+    "id": 448,
+    "name": "South Iron",
+    "slug": "south-iron"
+  },
+  {
     "id": 449,
     "name": "South Nodaway",
     "slug": "south-nodaway"
   },
   {
-    "id": 440,
+    "id": 450,
     "name": "South Pemiscot",
     "slug": "south-pemiscot"
   },
@@ -2240,19 +2355,39 @@
     "slug": "south-shelby"
   },
   {
+    "id": 806,
+    "name": "Southeast",
+    "slug": "southeast"
+  },
+  {
     "id": 2,
     "name": "Southern Boone",
     "slug": "southern-boone"
   },
   {
-    "id": 445,
+    "id": 453,
+    "name": "Southland",
+    "slug": "southland"
+  },
+  {
+    "id": 454,
+    "name": "Southwest (Livingston County)",
+    "slug": "southwest-livingston-county"
+  },
+  {
+    "id": 455,
+    "name": "Southwest (Washburn)",
+    "slug": "southwest-washburn"
+  },
+  {
+    "id": 456,
     "name": "Sparta",
     "slug": "sparta"
   },
   {
-    "id": 541,
-    "name": "Springfield Catholic",
-    "slug": "springfield-catholic"
+    "id": 457,
+    "name": "Spokane",
+    "slug": "spokane"
   },
   {
     "id": 168,
@@ -2265,7 +2400,7 @@
     "slug": "st-charles-west"
   },
   {
-    "id": 199,
+    "id": 170,
     "name": "St. Clair",
     "slug": "st-clair"
   },
@@ -2315,6 +2450,11 @@
     "slug": "st-paul-lutheran-concordia"
   },
   {
+    "id": 994,
+    "name": "St. Paul Lutheran (Farmington)",
+    "slug": "st-paul-lutheran-farmington"
+  },
+  {
     "id": 552,
     "name": "St. Pius X (Festus)",
     "slug": "st-pius-x-festus"
@@ -2340,7 +2480,7 @@
     "slug": "staley"
   },
   {
-    "id": 448,
+    "id": 460,
     "name": "Stanberry",
     "slug": "stanberry"
   },
@@ -2350,9 +2490,24 @@
     "slug": "ste-genevieve"
   },
   {
+    "id": 205,
+    "name": "Steelville",
+    "slug": "steelville"
+  },
+  {
+    "id": 462,
+    "name": "Stewartsville",
+    "slug": "stewartsville"
+  },
+  {
     "id": 463,
     "name": "Stockton",
     "slug": "stockton"
+  },
+  {
+    "id": 464,
+    "name": "Stoutland",
+    "slug": "stoutland"
   },
   {
     "id": 465,
@@ -2365,12 +2520,17 @@
     "slug": "strafford"
   },
   {
+    "id": 467,
+    "name": "Sturgeon",
+    "slug": "sturgeon"
+  },
+  {
     "id": 200,
     "name": "Sullivan",
     "slug": "sullivan"
   },
   {
-    "id": 450,
+    "id": 468,
     "name": "Summersville",
     "slug": "summersville"
   },
@@ -2380,29 +2540,49 @@
     "slug": "summit-christian-academy"
   },
   {
-    "id": 453,
+    "id": 208,
+    "name": "Sumner",
+    "slug": "sumner"
+  },
+  {
+    "id": 469,
     "name": "Sweet Springs",
     "slug": "sweet-springs"
   },
   {
-    "id": 201,
+    "id": 470,
     "name": "Tarkio",
     "slug": "tarkio"
   },
   {
-    "id": 201,
+    "id": 470,
     "name": "Tarkio with Fairfax, Craig",
     "slug": "tarkio-with-fairfax,-craig"
   },
   {
-    "id": 454,
+    "id": 471,
     "name": "Thayer",
     "slug": "thayer"
+  },
+  {
+    "id": 556,
+    "name": "Thomas Jefferson Independent Day",
+    "slug": "thomas-jefferson-independent-day"
   },
   {
     "id": 472,
     "name": "Timberland",
     "slug": "timberland"
+  },
+  {
+    "id": 473,
+    "name": "Tina-Avalon",
+    "slug": "tina-avalon"
+  },
+  {
+    "id": 473,
+    "name": "Tina-Avalon with Hale, Bosworth",
+    "slug": "tina-avalon-with-hale,-bosworth"
   },
   {
     "id": 202,
@@ -2415,6 +2595,11 @@
     "slug": "trenton"
   },
   {
+    "id": 475,
+    "name": "Tri-County",
+    "slug": "tri-county"
+  },
+  {
     "id": 476,
     "name": "Troy Buchanan",
     "slug": "troy-buchanan"
@@ -2425,14 +2610,24 @@
     "slug": "truman"
   },
   {
-    "id": 455,
+    "id": 477,
     "name": "Tuscumbia",
     "slug": "tuscumbia"
   },
   {
-    "id": 456,
+    "id": 199,
+    "name": "Twin Rivers",
+    "slug": "twin-rivers"
+  },
+  {
+    "id": 201,
     "name": "Union",
     "slug": "union"
+  },
+  {
+    "id": 478,
+    "name": "Union Star",
+    "slug": "union-star"
   },
   {
     "id": 479,
@@ -2445,9 +2640,29 @@
     "slug": "university-city"
   },
   {
+    "id": 558,
+    "name": "Ursuline Academy",
+    "slug": "ursuline-academy"
+  },
+  {
     "id": 559,
     "name": "Valle Catholic",
     "slug": "valle-catholic"
+  },
+  {
+    "id": 480,
+    "name": "Valley",
+    "slug": "valley"
+  },
+  {
+    "id": 481,
+    "name": "Valley Park",
+    "slug": "valley-park"
+  },
+  {
+    "id": 482,
+    "name": "Van Buren",
+    "slug": "van-buren"
   },
   {
     "id": 204,
@@ -2460,9 +2675,19 @@
     "slug": "van-far"
   },
   {
+    "id": 206,
+    "name": "Vashon",
+    "slug": "vashon"
+  },
+  {
     "id": 812,
     "name": "Veritas Christian Academy",
     "slug": "veritas-christian-academy"
+  },
+  {
+    "id": 484,
+    "name": "Verona",
+    "slug": "verona"
   },
   {
     "id": 485,
@@ -2475,9 +2700,24 @@
     "slug": "vianney"
   },
   {
-    "id": 460,
+    "id": 486,
+    "name": "Viburnum",
+    "slug": "viburnum"
+  },
+  {
+    "id": 487,
     "name": "Vienna",
     "slug": "vienna"
+  },
+  {
+    "id": 561,
+    "name": "Villa Duchesne",
+    "slug": "villa-duchesne"
+  },
+  {
+    "id": 562,
+    "name": "Visitation Academy",
+    "slug": "visitation-academy"
   },
   {
     "id": 461,
@@ -2495,7 +2735,7 @@
     "slug": "warrenton"
   },
   {
-    "id": 205,
+    "id": 490,
     "name": "Warsaw",
     "slug": "warsaw"
   },
@@ -2505,9 +2745,14 @@
     "slug": "washington"
   },
   {
-    "id": 206,
+    "id": 224,
     "name": "Waynesville",
     "slug": "waynesville"
+  },
+  {
+    "id": 576,
+    "name": "Weaubleau",
+    "slug": "weaubleau"
   },
   {
     "id": 207,
@@ -2530,7 +2775,17 @@
     "slug": "wellsville-middletown"
   },
   {
-    "id": 208,
+    "id": 493,
+    "name": "West County",
+    "slug": "west-county"
+  },
+  {
+    "id": 494,
+    "name": "West Nodaway",
+    "slug": "west-nodaway"
+  },
+  {
+    "id": 230,
     "name": "West Plains",
     "slug": "west-plains"
   },
@@ -2545,9 +2800,29 @@
     "slug": "westminster-christian-academy"
   },
   {
-    "id": 464,
+    "id": 233,
     "name": "Westran",
     "slug": "westran"
+  },
+  {
+    "id": 496,
+    "name": "Wheatland",
+    "slug": "wheatland"
+  },
+  {
+    "id": 497,
+    "name": "Wheaton",
+    "slug": "wheaton"
+  },
+  {
+    "id": 565,
+    "name": "Whitfield",
+    "slug": "whitfield"
+  },
+  {
+    "id": 234,
+    "name": "Willard",
+    "slug": "willard"
   },
   {
     "id": 235,
@@ -2585,13 +2860,28 @@
     "slug": "winona"
   },
   {
-    "id": 467,
+    "id": 503,
+    "name": "Winston",
+    "slug": "winston"
+  },
+  {
+    "id": 504,
+    "name": "Woodland",
+    "slug": "woodland"
+  },
+  {
+    "id": 505,
     "name": "Worth County",
     "slug": "worth-county"
   },
   {
-    "id": 468,
+    "id": 506,
     "name": "Wright City",
     "slug": "wright-city"
+  },
+  {
+    "id": 507,
+    "name": "Zalma",
+    "slug": "zalma"
   }
 ]
